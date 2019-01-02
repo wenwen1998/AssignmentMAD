@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Dog Adoption App</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_rehome">Rehome</string>
+    <string name="title_charity">Charity</string>
+    <string name="title_profile">Profile</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your username and password or sign up</string>
+    <string-array name="Breed">
+        <item>Canaan Dog</item>
+        <item>Chiwawa</item>
+        <item>Corgi</item>
+        <item>Dachshund</item>
+        <item>Pomeranian</item>
+        <item>Poodle</item>
+    </string-array>
+    <string-array name="Sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="Age">
+        <item>Baby</item>
+        <item>Young</item>
+        <item>Adult</item>
+        <item>Senior</item>
+    </string-array>
+    <string-array name="Size">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+
+    <string-array name="SQuestion">
+        <item>Who is your favourite hero?</item>
+        <item>Where u from?</item>
+        <item>Who is your best friend?</item>
+        <item>How old are you</item>
+        <item>What is your pet?</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileFrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingTop="1sp"
+                android:paddingBottom="1sp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="115dp"
+                    android:src="@drawable/userlogo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginEnd="150dp"
+                    android:background="@color/colorAccent"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp" />
+
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000">
+
+                <Button
+                    android:id="@+id/btnUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:drawablePadding="10dp"
+                    android:padding="10sp"
+                    android:text="Username"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/viewUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="3dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvEditUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txtChangeUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter new Username"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/btnConfirmUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="270dp"
+                        android:padding="10sp"
+                        android:text="Confirm Changes"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+                android:paddingTop="1sp">
+
+
+                <Button
+                    android:id="@+id/btnIC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@drawable/selector"
+                    android:padding="10sp"
+                    android:text="IC Number"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/viewIC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="3dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvEditIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txtChangeIC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter new IC Number"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/btnConfirmIC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="270dp"
+                        android:padding="10sp"
+                        android:text="Confirm Changes"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+                android:paddingTop="1sp">
+
+                <Button
+                    android:id="@+id/btnGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:padding="10sp"
+                    android:text="Gender"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/viewGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="3dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvEditGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radio_groupGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:textColor="@android:color/black">
+
+                        <RadioButton
+                            android:id="@+id/changeRadioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Male"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/changeRadioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btnConfirmGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="270dp"
+                        android:padding="10sp"
+                        android:text="Confirm Changes"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+                android:paddingTop="1sp">
+
+                <Button
+                    android:id="@+id/btnContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:padding="10sp"
+                    android:text="Contact Number"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/viewContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="3dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvEditContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/txtChangeContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter new Contact Number"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/btnConfirmContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="270dp"
+                        android:padding="10sp"
+                        android:text="Confirm Changes"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+
+                android:paddingTop="1sp"
+                android:paddingBottom="1sp">
+
+                <Button
+                    android:id="@+id/btnChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:padding="10sp"
+                    android:text="Change Password"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvEditPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txtChangePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter old Password"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/txtChangeNewPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter New Password"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/txtChangeCNewPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Confirm New Password"
+                        android:inputType="textPassword" />
+
+                    <Button
+                        android:id="@+id/btnConfirmPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="270dp"
+                        android:padding="10sp"
+                        android:text="Confirm Changes"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+
+                android:paddingTop="1sp"
+                android:paddingBottom="1sp">
+
+                <Button
+                    android:id="@+id/btnRehomeRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:padding="10sp"
+                    android:text="Rehome Records"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center|bottom"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="#CC0000"
+                android:text="Log Out"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

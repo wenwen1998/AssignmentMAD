@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "712640470019",
+    "firebase_url": "https://dogadoptionapp-lltgh.firebaseio.com",
+    "project_id": "dogadoptionapp-lltgh",
+    "storage_bucket": "dogadoptionapp-lltgh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712640470019:android:6bde6afb17b4ac8e",
+        "android_client_info": {
+          "package_name": "com.example.acer.lltgh_dogadoption"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712640470019-l15dclo32mcktb4pbre5t6jr17oofiu5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrcFuO-CNa0tOunForN3X-j3Jlm57583c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

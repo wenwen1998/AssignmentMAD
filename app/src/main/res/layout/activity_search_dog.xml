@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".SearchDog">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/color_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorItem"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtVDogInfo"
+        tools:layout_editor_absoluteX="25dp">
+
+        <TextView
+            android:id="@+id/txtVBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Breed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtVSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Sex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBreed"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtVAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSex"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtVSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAge"
+        tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnSearchDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="30dp"
+            android:text="Search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSize" />
+
+    <Spinner
+        android:id="@+id/spinnerBreed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:width="2dp"
+        android:color="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVBreed" />
+
+    <Spinner
+        android:id="@+id/spinnerSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:width="2dp"
+        android:color="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVSex" />
+
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:width="2dp"
+        android:color="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVAge" />
+
+    <Spinner
+        android:id="@+id/spinnerSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:width="2dp"
+        android:color="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVSize" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

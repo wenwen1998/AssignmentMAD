@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RehomePost"
+    android:background="@color/colorAccent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/txtSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Please select:"
+        android:textColor="@color/colorIcon"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="150dp"
+        android:text="Next" />
+
+    <RadioGroup
+        android:id="@+id/radgrpPost"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorIcon"
+            android:text="Post for public"
+            android:textColor="@color/colorIcon"/>
+
+        <RadioButton
+            android:id="@+id/radOrganisation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorIcon"
+            android:text="Post for organisation"
+            android:textColor="@color/colorIcon"/>
+    </RadioGroup>
+
+</FrameLayout>

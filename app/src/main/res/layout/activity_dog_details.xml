@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DogDetails">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingTop="22dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dog_img"/>
+
+        <TextView
+            android:id="@+id/txtVDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:text="Upload Date : "
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+        <TextView
+            android:id="@+id/txtVDateTimeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/txtVDateTime"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+        <TextView
+            android:id="@+id/txtVDogInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Dog Details"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVDateTime" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/color_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/colorItem"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/txtVDogInfo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="25dp">
+
+            <TextView
+                android:id="@+id/txtVName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="Name :     "
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txtVNameData"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtVNameData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtVBreed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="Breed :    "
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVName" />
+
+            <TextView
+                android:id="@+id/txtVBreedData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txtVBreed"
+                app:layout_constraintTop_toBottomOf="@+id/txtVNameData" />
+
+            <TextView
+                android:id="@+id/txtVSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="Sex :    "
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVBreed" />
+
+            <TextView
+                android:id="@+id/txtVSexData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txtVSex"
+                app:layout_constraintTop_toBottomOf="@+id/txtVBreedData" />
+
+            <TextView
+                android:id="@+id/txtVAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="Age :    "
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVSex" />
+
+            <TextView
+                android:id="@+id/txtVAgeData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txtVAge"
+                app:layout_constraintTop_toBottomOf="@+id/txtVSexData" />
+
+            <TextView
+                android:id="@+id/txtVSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="Size :    "
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVAge" />
+
+            <TextView
+                android:id="@+id/txtVSizeData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txtVSize"
+                app:layout_constraintTop_toBottomOf="@+id/txtVAgeData" />
+
+            <TextView
+                android:id="@+id/txtVDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="Description :    "
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVSize" />
+
+            <TextView
+                android:id="@+id/txtVDescData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txtVDesc"
+                app:layout_constraintTop_toBottomOf="@+id/txtVSizeData" />
+
+            <TextView
+                android:id="@+id/txtVReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Reason :    "
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVDesc" />
+
+            <TextView
+                android:id="@+id/txtVReasonData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txtVReason"
+                app:layout_constraintTop_toBottomOf="@+id/txtVDescData" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtVOwnerDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:text="Owner Details"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color_layout" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/color_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/colorItem"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/txtVOwnerDetails">
+
+            <TextView
+                android:id="@+id/txtVOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="Owner Name :    "
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtVOwnerNameData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/txtVOwnerName"/>
+
+            <TextView
+                android:id="@+id/txtVContactNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="Contact Number :    "
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVOwnerName" />
+
+        <TextView
+            android:id="@+id/txtVContactNumData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/txtVContactNum"
+            app:layout_constraintTop_toBottomOf="@+id/txtVOwnerNameData" />
+
+            <ImageButton
+                android:id="@+id/imgBtnCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgBtnSms"
+                app:layout_constraintTop_toBottomOf="@+id/txtVContactNum"
+                app:srcCompat="@drawable/call" />
+
+            <ImageButton
+                android:id="@+id/imgBtnSms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVContactNum"
+                app:srcCompat="@drawable/sms" />
+
+            <ImageButton
+                android:id="@+id/imgBtnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVContactNum"
+                app:srcCompat="@drawable/share" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
